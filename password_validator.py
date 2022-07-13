@@ -1,4 +1,3 @@
-import getopt
 import re
 from termcolor import colored
 import sys
@@ -13,7 +12,7 @@ lowerCase="^(?=.*[a-z])"
 number="^(?=.*\d)"
 if re.fullmatch(regex,password):
     print(colored(True, 'green'))
-    exit(1)
+    exit(0)
 
 else:
     print(colored(False, 'red'))
